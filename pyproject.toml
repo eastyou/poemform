@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poemform"
+version = "0.1.0"
+description = "中小学古诗词格律入门工具（教学简化版）：平仄、押韵与可打印练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["poem", "chinese", "education", "tone", "rhyme", "chinese-poetry"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Chinese (Simplified)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Typing :: Typed",
+]
+
+[project.scripts]
+poemform = "poemform.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/poemform"
+Source = "https://github.com/eastyou/poemform"
+
+[tool.setuptools]
+packages = ["poemform"]
